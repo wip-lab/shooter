@@ -57,6 +57,7 @@ target/
 .Python
 bin
 lib
+lib64
 include
 
 # Mac OS X custom attribute files
