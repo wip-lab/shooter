@@ -1,11 +1,12 @@
 from os import listdir, mkdir
 from os.path import isfile, join
+import sys
 import rarfile
 import chardet
 
 if __name__ == '__main__':
-  rarpath = 'rars'
-  targetpath = 'srts'
+  rarpath = sys.argv[1]
+  targetpath = sys.argv[2]
   rarfiles = (f for f in listdir(rarpath))
   
   for file in rarfiles:
